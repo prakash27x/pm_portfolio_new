@@ -1,5 +1,41 @@
-// Fetch the project data from the JSON file
-fetch('/resources/json/projects.json')
+// Wait for DOM to fully load before attaching event listeners
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the mobile menu button and navigation links
+  const menuBtn = document.querySelector('.mobile-menu-button');
+  const navLinks = document.querySelector('.nav__links');
+  
+  // Toggle mobile menu when button is clicked
+  if (menuBtn) {
+    menuBtn.addEventListener('click', function() {
+      navLinks.classList.toggle('hidden');
+    });
+  }
+  
+  // Close mobile menu when clicking on a link (for better UX)
+  const navItems = document.querySelectorAll('.nav__links li a');
+  navItems.forEach(item => {
+    item.addEventListener('click', function() {
+      if (window.innerWidth < 769) {
+        navLinks.classList.add('hidden');
+      }
+    });
+  });
+  
+  // Close mobile menu when clicking outside of it
+  document.addEventListener('click', function(event) {
+    // Check if click is inside nav or on menu button
+    const isClickInsideNav = navLinks.contains(event.target);
+    const isClickOnMenuBtn = menuBtn.contains(event.target);
+    
+    // If click is outside nav and menu button, and menu is open on mobile, close it
+    if (!isClickInsideNav && !isClickOnMenuBtn && !navLinks.classList.contains('hidden') && window.innerWidth < 769) {
+      navLinks.classList.add('hidden');
+    }
+  });
+});
+
+// Keep your existing projects fetch functionality
+fetch('resources/json/projects.json')
   .then(response => response.json())
   .then(data => {
     const projectContainer = document.getElementById('project');
@@ -8,7 +44,7 @@ fetch('/resources/json/projects.json')
     projectContainer.innerHTML = '';
 
     // Loop through the data and create HTML elements for each project
-    data.forEach(project => {
+    data.projects.forEach(project => {
       const card = document.createElement('div');
       card.className = 'card';
       card.style.width = '20rem';

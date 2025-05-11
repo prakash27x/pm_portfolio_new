@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/index.css">
 
     <title>@prakash27x </title>
-    
 </head>
 <body class="bg-gray-50" style="font-family: barlow, sans-serif;">
     <header class="">
@@ -24,14 +23,14 @@
           <img src="/assets/img/logo5.png" alt="logo" class="w-14 object-cover logo">
         </a>
         
-        <!-- Mobile toggle button
-        <button class="mobile-menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </button> -->
+        <!-- Mobile toggle button -->
+        <button class="mobile-menu-button text-2xl p-2" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
 
       <!-- nav-items section  -->
         <nav>
-          <ul class="nav__links">
+          <ul class="nav__links hidden md:flex md:flex-row md:space-y-0 md:space-x-4">
             <li><a href="index.html">Home</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#services">Services</a></li>
@@ -46,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="/resources/img/hero2.png" alt="hero" class="hero-image">
+                    <img src="/assets/img/hero2.png" alt="hero" class="hero-image">
                 </div>
                 <div class="col-md-7 d-flex flex-column justify-content-center" style="padding: 2rem;">
                     <h3>Hi, I'm</h3>
@@ -59,134 +58,115 @@
                 </div>
             </div>
         </div>
-        </section>
+      </section>
 
-
-    <!-- projects section  -->
-        <!-- <section id="team" class="bg-white p-8">
-          <div class="container mx-auto">
-            <h2 class="text-3xl text-ntc font-semibold">Team</h2>
-            <div id="executives-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8"></div>
+      <div class="project-title">Project:</div>
+      <section class="project" id="project"> 
+        <div class="card" style="width: 20rem;">
+          <img src="./assets/img/project/e-fir.png" class="card-img-top" alt="e-FIR">
+          <div class="card-body">
+            <h5 class="card-title">e-FIR Registration System</h5>
+            <p class="card-text">an online portal where citizens can register FIR online.</p>
+            <a href="#" class="btn btn-primary">More</a>
           </div>
-        </section> -->
-
-        <div class="project-title">Project:</div>
-        <section class="project" id="project"></section>
-        
-          <div class="project-title">Project:</div>
-        <section class="project" id="project"> 
-          <div class="card" style="width: 20rem;">
-            <img src="./resources/img/project/e-fir.png" class="card-img-top" alt="e-FIR">
-            <div class="card-body">
-              <h5 class="card-title">e-FIR Registration System</h5>
-              <p class="card-text">an online portal where citizens can register FIR online.</p>
-              <a href="#" class="btn btn-primary">More</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 20rem;">
-            <img src="./resources/img/project/cafe-reservation.png" class="card-img-top" alt="Cafe">
-            <div class="card-body">
-              <h5 class="card-title">Cafe Reservation Hub</h5>
-              <p class="card-text">an online web platform to facilitate cafe reservations for customers..</p>
-              <a href="#" class="btn btn-primary">More</a>
-            </div>
-          </div>
-          
-          <div class="card" style="width: 20rem;">
-            <img src="./resources/img/project/e-fir.png" class="card-img-top" alt="e-FIR">
-            <div class="card-body">
-              <h5 class="card-title">e-FIR Registration System</h5>
-              <p class="card-text">an online portal where citizens can register FIR online.</p>
-              <a href="#" class="btn btn-primary">More</a>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem;">
-            <img src="./resources/img/project/cafe-reservation.png" class="card-img-top" alt="Cafe">
-            <div class="card-body">
-              <h5 class="card-title">Cafe Reservation Hub</h5>
-              <p class="card-text">an online web platform to facilitate cafe reservations for customers..</p>
-              <a href="#" class="btn btn-primary">More</a>
-            </div>
-          </div>
-        </section>
-
-    <!-- service section -->
-        <section class="services" id="services">
-          <div class="service">
-            <i class='bx bx-code-alt'></i>
-            <h2>Web Development</h2>
-            <p>Developing websites and web applications using modern technologies.</p>
-          </div>
-
-          <div class="service">
-            <i class='bx bx-code-alt'></i>
-            <h2>Graphics Design</h2>
-            <p>Designing Posters, Banners, Logos for any types of organisations</p>
-          </div>
-
-          <div class="service">
-            <i class='bx bx-code-alt'></i>
-            <h2>Mobile App Development</h2>
-            <p>Developing applications using modern technologies.</p>
-          </div>
-        </section>
-
-    <!-- contact section  -->
-        <section class="contact" id="contact">
-            <div class="col-md-5" id="contact-form">
-              <div class="contact-form_inside">
-                  <form action="contact.php" method="post">
-                      <label for="name">Name</label>
-                      <input type="text" name="name" id="name" required> <br>
-                      <label for="Email">Email</label>
-                      <input type="email" name="email" id="email" required> <br>
-                      <label for="subject">Subject</label>
-                      <input type="text" name="subject" id="subject" required> <br>
-                      <label for="message">Message</label>
-                      <textarea type="text" name="message" id="message" required> </textarea>
-                      <input type="submit" name="submit" value="Submit" onclick="popup_msg()">
-                  </form>
-              </div>
-            </div>
-        </section>
-    
-    <!-- about me section  -->
-          <div style="display: flex; align-items: center;">
-            <div style="font-size: 1rem; margin: 2rem; justify-content: space-between;">
-                Meet Prakash Mahara, a passionate tech enthusiast, content creator on <a href="https://youtube.com/@tech4knepal" target="_blank" style="color: blue; text-decoration: none;">Youtube</a> and skilled website developer with a flair for <b>hacking</b>, coding.
-                <br> Currently pursuing a Bachelor of IT Engineering at Pokhara University, Nepal.
-                Proficient in C, C++, and Data Structures, Prakash also excels in web development technologies like PHP, JavaScript, and MySQL.
-                <br><br> I am thrilled to share my passion for technology and creativity with you. I invite you to join me on this exciting adventure. Together, let's explore, learn, and create amazing things that make a positive impact on the world.
-            </div>
-          </div>
-          <hr>
-          <br>
-          <ul class="socialmedia" style="text-align:center; ">
-                <a href="https://www.facebook.com/prakash27x" target="_blank"><i class="fa-brands fa-facebook"> </i></a> &nbsp;
-                <a href="https://www.instagram.com/prakash_27x" target="_blank"><i class="fa-brands fa-instagram"></i></a> &nbsp;  
-                <a href="https://www.twitter.com/prakash27x" target="_blank"><i class="fa-brands fa-twitter"></i></a> &nbsp;  
-                <a href="https://www.t.me/prakash2078" target="_blank"><i class="fa-brands fa-telegram"></i></a> &nbsp;  
-                <a href="https://www.linkedin.com/in/prakash27x" target="_blank"><i class="fa-brands fa-linkedin"> </i></a> &nbsp;    
-                <a href="https://www.github.com/prakash27x" target="_blank"><i class="fa-brands fa-github"></i></i></a> &nbsp;  
-                <a href="https://www.threads.net/@prakash_27x" target="_blank"><i class="fa-brands fa-square-threads"></i> &nbsp;
-                <a href="https://www.youtube.com/@rpmvlog2" target="_blank"> <i class="fa-brands fa-youtube"> </i></a>&nbsp;
-                <a href="https://www.discord.com/prakash27x" target="_blank"> <i class="fa-brands fa-discord"></i></a> &nbsp;
-                <a href="https://www.tiktok.com/@prakash27x" target="_blank"><i class="fa-brands fa-tiktok"> </i></a> &nbsp;
-          </ul>
-
-    <!-- footer section  -->
-        <div class="footer-copyright-section" id="footer-copyright-section">
-              <span> Copyright ©2024 -/- Developed by Prakash Mahara ❤️ with Tech4K Nepal </span>
         </div>
 
-    <!-- <script>
-        // JavaScript for mobile menu toggle functionality
-        document.querySelector('.mobile-menu-button').addEventListener('click', () => {
-            document.querySelector('nav').classList.toggle('hidden');
-        });
-    </script> -->
+        <div class="card" style="width: 20rem;">
+          <img src="./assets/img/project/cafe-reservation.png" class="card-img-top" alt="Cafe">
+          <div class="card-body">
+            <h5 class="card-title">Cafe Reservation Hub</h5>
+            <p class="card-text">an online web platform to facilitate cafe reservations for customers..</p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 20rem;">
+          <img src="./assets/img/project/e-fir.png" class="card-img-top" alt="e-FIR">
+          <div class="card-body">
+            <h5 class="card-title">e-FIR Registration System</h5>
+            <p class="card-text">an online portal where citizens can register FIR online.</p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="./assets/img/project/cafe-reservation.png" class="card-img-top" alt="Cafe">
+          <div class="card-body">
+            <h5 class="card-title">Cafe Reservation Hub</h5>
+            <p class="card-text">an online web platform to facilitate cafe reservations for customers..</p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </section>
 
-<script src="script.js"></script>
+    <!-- service section -->
+      <section class="services" id="services">
+        <div class="service">
+          <i class='bx bx-code-alt'></i>
+          <h2>Web Development</h2>
+          <p>Developing websites and web applications using modern technologies.</p>
+        </div>
+
+        <div class="service">
+          <i class='bx bx-code-alt'></i>
+          <h2>Graphics Design</h2>
+          <p>Designing Posters, Banners, Logos for any types of organisations</p>
+        </div>
+
+        <div class="service">
+          <i class='bx bx-code-alt'></i>
+          <h2>Mobile App Development</h2>
+          <p>Developing applications using modern technologies.</p>
+        </div>
+      </section>
+
+    <!-- contact section  -->
+      <section class="contact" id="contact">
+          <div class="col-md-5" id="contact-form">
+            <div class="contact-form_inside">
+                <form action="" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required> <br>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email" required> <br>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required> <br>
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message" required> </textarea>
+                    <input type="submit" name="submit" value="Submit" onclick="popup_msg()">
+                </form>
+            </div>
+          </div>
+      </section>
+    
+    <!-- about me section  -->
+      <div style="display: flex; align-items: center;" id="aboutme">
+        <div style="font-size: 1rem; margin: 2rem; justify-content: space-between;">
+            Meet Prakash Mahara, a passionate tech enthusiast, content creator on <a href="https://youtube.com/@tech4knepal" target="_blank" style="color: blue; text-decoration: none;">Youtube</a> and skilled website developer with a flair for <b>hacking</b>, coding.
+            <br> Currently pursuing a Bachelor of IT Engineering at Pokhara University, Nepal.
+            Proficient in C, C++, and Data Structures, Prakash also excels in web development technologies like PHP, JavaScript, and MySQL.
+            <br><br> I am thrilled to share my passion for technology and creativity with you. I invite you to join me on this exciting adventure. Together, let's explore, learn, and create amazing things that make a positive impact on the world.
+        </div>
+      </div>
+      <hr>
+      <br>
+      <ul class="socialmedia" style="text-align:center; ">
+            <a href="https://www.facebook.com/prakash27x" target="_blank"><i class="fa-brands fa-facebook"> </i></a> &nbsp;
+            <a href="https://www.instagram.com/prakash_27x" target="_blank"><i class="fa-brands fa-instagram"></i></a> &nbsp;  
+            <a href="https://www.twitter.com/prakash27x" target="_blank"><i class="fa-brands fa-twitter"></i></a> &nbsp;  
+            <a href="https://www.t.me/prakash2078" target="_blank"><i class="fa-brands fa-telegram"></i></a> &nbsp;  
+            <a href="https://www.linkedin.com/in/prakash27x" target="_blank"><i class="fa-brands fa-linkedin"> </i></a> &nbsp;    
+            <a href="https://www.github.com/prakash27x" target="_blank"><i class="fa-brands fa-github"></i></i></a> &nbsp;  
+            <a href="https://www.threads.net/@prakash_27x" target="_blank"><i class="fa-brands fa-square-threads"></i> &nbsp;
+            <a href="https://www.youtube.com/@rpmvlog2" target="_blank"> <i class="fa-brands fa-youtube"> </i></a>&nbsp;
+            <a href="https://www.discord.com/prakash27x" target="_blank"> <i class="fa-brands fa-discord"></i></a> &nbsp;
+            <a href="https://www.tiktok.com/@prakash27x" target="_blank"><i class="fa-brands fa-tiktok"> </i></a> &nbsp;
+      </ul>
+
+    <!-- footer section  -->
+      <div class="footer-copyright-section" id="footer-copyright-section">
+            <span> Copyright ©2024 -/- Developed by Prakash Mahara ❤️ with Tech4K Nepal </span>
+      </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
