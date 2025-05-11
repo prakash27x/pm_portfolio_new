@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "e-FIR Registration System",
+      "description": "An online portal where citizens can register FIR online.",
+      "image": "./resources/img/project/e-fir.png",
+      "link": "#"
+    },
+    {
+      "title": "Cafe Reservation Hub",
+      "description": "An online portal where customers can reserve tables in cafes.",
+      "image": "./resources/img/project/cafe-reservation.png",
+      "link": "#"
+    },
+    {
+      "title": "e-Attendance System",
+      "description": "An online portal where attendance can be marked and viewed.",
+      "image": "./resources/img/project/e-attendance.png",
+      "link": "#"
+    }
+  ]
+}
