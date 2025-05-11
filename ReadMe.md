@@ -1,2 +1,2 @@
 #PM Portfolio new
-This is a porfolio code for my new website
+This is the new portfolio website
