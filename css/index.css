@@ -44,6 +44,14 @@ header{
 section{
     padding: 0.5rem;
 }
+#intro-elements-url a{
+    color: blue;
+}
+#intro-elements-url a:hover{
+    text-decoration: underline;
+    color:darkorange;
+}
+
 #footer-copyright-section{
     background-color: #000000;
     color: #ffffff;
