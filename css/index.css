@@ -622,6 +622,7 @@ input[type], textarea{
     .footer-top {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
     }
     
     .footer-nav {
@@ -631,11 +632,18 @@ input[type], textarea{
     }
     
     .footer-social {
+        position: static;
         justify-content: center;
     }
     
     .footer-bottom {
         flex-direction: column;
+        gap: 1rem;
         text-align: center;
+    }
+    
+    .back-to-top {
+        position: static;
+        justify-content: center;
     }
 }
