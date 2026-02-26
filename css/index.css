@@ -460,10 +460,9 @@ input[type], textarea{
 
 .footer-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    position: relative;
     padding-bottom: 2rem;
 }
 
@@ -478,7 +477,7 @@ input[type], textarea{
 
 .footer-brand .footer-name span {
     color: #fff;
-    border-bottom: 3px solid #f39c12;
+    border-bottom: none;
 }
 
 .footer-tagline {
@@ -489,6 +488,7 @@ input[type], textarea{
 
 .footer-nav {
     display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -504,6 +504,8 @@ input[type], textarea{
 }
 
 .footer-social {
+    position: absolute;
+    right: 0;
     display: flex;
     gap: 1rem;
 }
