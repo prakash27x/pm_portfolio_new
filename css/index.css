@@ -636,7 +636,7 @@ input[type], textarea{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .back-to-top i {
@@ -705,5 +705,13 @@ input[type], textarea{
     .back-to-top {
         position: static;
         justify-content: center;
+    }
+}
+
+/* Hide Swiper navigation arrows on mobile */
+@media (max-width: 768px) {
+    .project-carousel .swiper-button-prev,
+    .project-carousel .swiper-button-next {
+        display: none !important;
     }
 }
