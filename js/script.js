@@ -1,5 +1,20 @@
 // Wait for DOM to fully load before attaching event listeners
 document.addEventListener('DOMContentLoaded', function() {
+  // Set copyright year dynamically
+  const copyrightYear = document.getElementById('copyright-year');
+  if (copyrightYear) {
+    copyrightYear.textContent = new Date().getFullYear();
+  }
+
+  // Back to top button functionality
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    backToTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // Get the mobile menu button and navigation links
   const menuBtn = document.querySelector('.mobile-menu-button');
   const navLinks = document.querySelector('.nav__links');
@@ -54,7 +69,7 @@ fetch('assets/json/projects.json')
         <div class="card-body">
           <h5 class="card-title">${project.title}</h5>
           <p class="card-text">${project.description}</p>
-          <a href="${project.link}" class="btn btn-primary">More</a>
+          <a href="${project.link}" class="btn btn-primary" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
         </div>
       `;
       
