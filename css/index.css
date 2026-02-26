@@ -72,7 +72,7 @@ section{
 
 /* Project Carousel Section */
 .project-section {
-    background-color: rgb(9, 48, 79);
+    background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 100%) !important;
     padding: 2rem 1rem 3rem;
 }
 
