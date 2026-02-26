@@ -69,11 +69,60 @@ section{
     background-color: rgb(9, 48, 79);
     color: white;
 }
+
+/* Project Carousel Section */
+.project-section {
+    background-color: rgb(9, 48, 79);
+    padding: 2rem 1rem 3rem;
+}
+
+.project-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+.project-carousel .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.project-carousel .swiper-button-prev,
+.project-carousel .swiper-button-next {
+    color: #fff;
+    background: rgba(0, 136, 169, 0.8);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.project-carousel .swiper-button-prev:after,
+.project-carousel .swiper-button-next:after {
+    font-size: 18px;
+}
+
+.project-carousel .swiper-button-prev:hover,
+.project-carousel .swiper-button-next:hover {
+    background: #0088a9;
+}
+
+.project-carousel .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+}
+
+.project-carousel .swiper-pagination-bullet-active {
+    background: #0088a9;
+    opacity: 1;
+}
+
 #project{
     display: flex;
     justify-content: space-evenly;
-    padding: 2rem;
-    background-color: rgb(9, 48, 79);
+    padding: 0;
+    background-color: transparent;
 }
 #services{
     display: flex;
@@ -178,14 +227,25 @@ input[type], textarea{
         display: none;
     }
     
-    /* Fix flex display for projects section on mobile */
-    #project {
-        flex-direction: column;
-        align-items: center;
+    /* Project carousel mobile adjustments */
+    .project-carousel {
+        padding: 1rem 2.5rem;
+    }
+    
+    .project-carousel .swiper-button-prev,
+    .project-carousel .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .project-carousel .swiper-button-prev:after,
+    .project-carousel .swiper-button-next:after {
+        font-size: 14px;
     }
     
     #project .card {
-        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 18rem;
     }
     
     /* Fix flex display for services section on mobile */

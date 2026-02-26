@@ -60,21 +60,53 @@ fetch('assets/json/projects.json')
 
     // Loop through the data and create HTML elements for each project
     data.projects.forEach(project => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.style.width = '20rem';
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
       
-      card.innerHTML = `
-        <img src="${project.image}" class="card-img-top" alt="${project.title}">
-        <div class="card-body">
-          <h5 class="card-title">${project.title}</h5>
-          <p class="card-text">${project.description}</p>
-          <a href="${project.link}" class="btn btn-primary" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
+      slide.innerHTML = `
+        <div class="card" style="width: 20rem;">
+          <img src="${project.image}" class="card-img-top" alt="${project.title}">
+          <div class="card-body">
+            <h5 class="card-title">${project.title}</h5>
+            <p class="card-text">${project.description}</p>
+            <a href="${project.link}" class="btn btn-primary" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
         </div>
       `;
       
-      // Append the card to the project container
-      projectContainer.appendChild(card);
+      // Append the slide to the project container
+      projectContainer.appendChild(slide);
+    });
+
+    // Initialize Swiper after projects are loaded
+    new Swiper('.project-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      centeredSlides: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+        1024: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
     });
   })
   .catch(error => console.error('Error fetching projects:', error));
