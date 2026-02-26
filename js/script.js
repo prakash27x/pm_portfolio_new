@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Keep your existing projects fetch functionality
-fetch('resources/json/projects.json')
+fetch('assets/json/projects.json')
   .then(response => response.json())
   .then(data => {
     const projectContainer = document.getElementById('project');

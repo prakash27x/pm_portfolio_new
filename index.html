@@ -14,7 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 
-    <title>@prakash27x </title>
+    <meta name="description" content="Portfolio of Prakash Mahara - IT Engineering Student, Web Developer, AI & Cyber Security Enthusiast. Explore my projects and services.">
+    <meta name="keywords" content="Prakash Mahara, Web Developer, IT Engineer, Portfolio, Nepal">
+    <meta name="author" content="Prakash Mahara">
+
+    <title>Prakash Mahara | Portfolio</title>
 </head>
 <body class="bg-gray-50" style="font-family: barlow, sans-serif;">
     <header class="">
@@ -45,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="/assets/img/hero2.png" alt="hero" class="hero-image">
+                    <img src="./assets/img/hero2.png" alt="hero" class="hero-image">
                 </div>
                 <div class="col-md-7 d-flex flex-column justify-content-center" style="padding: 2rem;">
                     <h3>Hi, I'm</h3>
@@ -60,62 +64,28 @@
         </div>
       </section>
 
-<!-- Project section -->
-      <div class="project-title"></div>
-      <!-- Currently, I've not attached any project here. Kindly requested to reachout my github repositories. -->
-      <!-- <section class="project" id="project"> 
-        <div class="card" style="width: 20rem;">
-          <img src="./assets/img/project/e-fir.png" class="card-img-top" alt="e-FIR">
-          <div class="card-body">
-            <h5 class="card-title">e-FIR Registration System</h5>
-            <p class="card-text">an online portal where citizens can register FIR online.</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 20rem;">
-          <img src="./assets/img/project/cafe-reservation.png" class="card-img-top" alt="Cafe">
-          <div class="card-body">
-            <h5 class="card-title">Cafe Reservation Hub</h5>
-            <p class="card-text">an online web platform to facilitate cafe reservations for customers..</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div>
-        </div>
-        
-        <div class="card" style="width: 20rem;">
-          <img src="./assets/img/project/e-fir.png" class="card-img-top" alt="e-FIR">
-          <div class="card-body">
-            <h5 class="card-title">e-FIR Registration System</h5>
-            <p class="card-text">an online portal where citizens can register FIR online.</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img src="./assets/img/project/cafe-reservation.png" class="card-img-top" alt="Cafe">
-          <div class="card-body">
-            <h5 class="card-title">Cafe Reservation Hub</h5>
-            <p class="card-text">an online web platform to facilitate cafe reservations for customers..</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div>
-        </div>
-      </section> -->
+      <div class="section-title project-title">Projects</div>
+      <section class="project" id="project">
+        <!-- Projects are dynamically loaded from assets/json/projects.json -->
+      </section>
 
     <!-- service section -->
+      <div class="section-title services-title">Services</div>
       <section class="services" id="services">
         <div class="service">
-          <i class='bx bx-code-alt'></i>
+          <i class='bx bx-globe'></i>
           <h2>Web Development</h2>
           <p>Developing websites and web applications using modern technologies.</p>
         </div>
 
         <div class="service">
-          <i class='bx bx-code-alt'></i>
+          <i class='bx bx-palette'></i>
           <h2>Graphics Design</h2>
           <p>Designing Posters, Banners, Logos for any types of organisations</p>
         </div>
 
         <div class="service">
-          <i class='bx bx-code-alt'></i>
+          <i class='bx bx-mobile-alt'></i>
           <h2>Mobile App Development</h2>
           <p>Developing applications using modern technologies.</p>
         </div>
@@ -141,28 +111,29 @@
       </section> -->
     
     <!-- about me section  -->
-      <div style="display: flex; align-items: center;" id="aboutme">
-        <div style="font-size: 1rem; margin: 2rem; justify-content: space-between;">
-            Meet Prakash Mahara, a passionate tech enthusiast, content creator on <a href="https://youtube.com/@tech4knepal" target="_blank" style="color: blue; text-decoration: none;">Youtube</a> and skilled website developer with a flair for <b>hacking</b>, coding.
-            <br> Currently pursuing a Bachelor of IT Engineering at Pokhara University, Nepal.
-            Proficient in C, C++, and Data Structures, Prakash also excels in web development technologies like PHP, JavaScript, and MySQL.
-            <br>I am thrilled to share my passion for technology and creativity with you. I invite you to join me on this exciting adventure. Together, let's explore, learn, and create amazing things that make a positive impact on the world.
-            <br><br> You can explore my old website from here : <a href="https://prakash27x.github.io/pm_portfolio-old/" style="color: rgb(171, 107, 4); text-decoration:underline; font-weight: 700;">old website</a>
+      <div class="section-title aboutme-title">About Me</div>
+      <section class="aboutme-section" id="aboutme">
+        <div class="aboutme-card">
+          <div class="aboutme-content">
+            <p>Meet <strong>Prakash Mahara</strong>, a passionate tech enthusiast, content creator on <a href="https://youtube.com/@tech4knepal" target="_blank">Youtube</a> and skilled website developer with a flair for <b>hacking</b> and coding.</p>
+            <p>Currently pursuing a Bachelor of IT Engineering at Pokhara University, Nepal. Proficient in C, C++, and Data Structures, Prakash also excels in web development technologies like PHP, JavaScript, and MySQL.</p>
+            <p>I am thrilled to share my passion for technology and creativity with you. I invite you to join me on this exciting adventure. Together, let's explore, learn, and create amazing things that make a positive impact on the world.</p>
+            <p class="old-website-link">You can explore my old website from here: <a href="https://prakash27x.github.io/pm_portfolio-old/">old website</a></p>
+          </div>
         </div>
-      </div>
+      </section>
       <hr>
       <br>
       <ul class="socialmedia" style="text-align:center; ">
             <a href="https://www.facebook.com/prakash27x" target="_blank"><i class="fa-brands fa-facebook"> </i></a> &nbsp;
             <a href="https://www.instagram.com/prakash_27x" target="_blank"><i class="fa-brands fa-instagram"></i></a> &nbsp;  
             <a href="https://www.twitter.com/prakash27x" target="_blank"><i class="fa-brands fa-twitter"></i></a> &nbsp;  
-            <a href="https://www.t.me/prakash2078" target="_blank"><i class="fa-brands fa-telegram"></i></a> &nbsp;  
             <a href="https://www.linkedin.com/in/prakash27x" target="_blank"><i class="fa-brands fa-linkedin"> </i></a> &nbsp;    
             <a href="https://www.github.com/prakash27x" target="_blank"><i class="fa-brands fa-github"></i></i></a> &nbsp;  
             <a href="https://www.threads.net/@prakash_27x" target="_blank"><i class="fa-brands fa-square-threads"></i> &nbsp;
             <a href="https://www.youtube.com/@rpmvlog2" target="_blank"> <i class="fa-brands fa-youtube"> </i></a>&nbsp;
             <a href="https://www.discord.com/prakash27x" target="_blank"> <i class="fa-brands fa-discord"></i></a> &nbsp;
-            <a href="https://www.tiktok.com/@prakash27x" target="_blank"><i class="fa-brands fa-tiktok"> </i></a> &nbsp;
+            
       </ul>
 
     <!-- footer section  -->

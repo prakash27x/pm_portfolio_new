@@ -6,6 +6,12 @@
     padding: 0;
     font-family: "outfit", sans-serif;
 }
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: white;
 }
@@ -191,5 +197,263 @@ input[type], textarea{
     #services .service {
         margin-bottom: 1rem;
         width: 90%;
+    }
+}
+
+/* ===================== NEW DESIGN IMPROVEMENTS ===================== */
+
+/* Section Titles */
+.section-title {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-title {
+    background: linear-gradient(135deg, #09304f 0%, #0a4a6e 100%);
+    color: white;
+}
+
+.services-title {
+    background: linear-gradient(135deg, #d6d6d6 0%, #e8e8e8 100%);
+    color: #333;
+}
+
+.aboutme-title {
+    background: linear-gradient(135deg, #020b1f 0%, #0a2a4a 100%);
+    color: white;
+}
+
+/* Hero Section Gradient */
+section:first-of-type {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem 0;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+/* Project Card Hover Effects */
+#project .card {
+    width: 20rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+#project .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+#project .card .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+#project .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+#project .card .btn-primary {
+    background: linear-gradient(135deg, #0088a9 0%, #03596e 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#project .card .btn-primary:hover {
+    background: linear-gradient(135deg, #03596e 0%, #024a5c 100%);
+    transform: translateX(5px);
+}
+
+/* Services Section Enhancement */
+.service {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service i {
+    font-size: 3rem;
+    color: #0088a9;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service:hover i {
+    transform: scale(1.2);
+    color: #03596e;
+}
+
+.service h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* About Me Section */
+.aboutme-section {
+    background: linear-gradient(135deg, #020b1f 0%, #0a2a4a 100%);
+    padding: 3rem 2rem;
+}
+
+.aboutme-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aboutme-content {
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+.aboutme-content p {
+    margin-bottom: 1rem;
+}
+
+.aboutme-content strong {
+    color: #0088a9;
+}
+
+.aboutme-content a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.aboutme-content a:hover {
+    color: #5dade2;
+    text-decoration: underline;
+}
+
+.old-website-link {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.old-website-link a {
+    color: #f39c12 !important;
+    font-weight: 700;
+}
+
+/* Enhanced Social Media Icons */
+.socialmedia {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+.socialmedia i {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 15px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 50%;
+}
+
+.socialmedia a:hover i {
+    transform: translateY(-8px) scale(1.2);
+}
+
+/* Individual social icon colors on hover */
+.socialmedia a:hover .fa-facebook {
+    color: #1877f2;
+}
+
+.socialmedia a:hover .fa-instagram {
+    color: #e4405f;
+}
+
+.socialmedia a:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.socialmedia a:hover .fa-telegram {
+    color: #0088cc;
+}
+
+.socialmedia a:hover .fa-linkedin {
+    color: #0077b5;
+}
+
+.socialmedia a:hover .fa-github {
+    color: #333;
+}
+
+.socialmedia a:hover .fa-square-threads {
+    color: #000;
+}
+
+.socialmedia a:hover .fa-youtube {
+    color: #ff0000;
+}
+
+.socialmedia a:hover .fa-discord {
+    color: #5865f2;
+}
+
+.socialmedia a:hover .fa-tiktok {
+    color: #000;
+}
+
+/* Footer Enhancement */
+#footer-copyright-section {
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+    padding: 1rem;
+}
+
+/* Mobile Responsive Adjustments for New Styles */
+@media (max-width: 768px) {
+    .aboutme-card {
+        padding: 1.5rem;
+    }
+    
+    .aboutme-content {
+        font-size: 0.95rem;
+    }
+    
+    .socialmedia i {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+    }
+    
+    .hero-image {
+        margin-bottom: 1.5rem;
     }
 }
