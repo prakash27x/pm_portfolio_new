@@ -204,12 +204,12 @@ input[type], textarea{
 
 /* Section Titles */
 .section-title {
-    padding: 1.2rem 2rem;
-    font-size: 1.8rem;
-    font-weight: 800;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    border-left: 5px solid #0088a9;
+    letter-spacing: 2px;
+    border-left: 4px solid #0088a9;
 }
 
 .project-title {
@@ -230,22 +230,10 @@ input[type], textarea{
     border-left-color: #f39c12;
 }
 
-/* Hero Section Gradient */
-section:first-of-type {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    padding: 2rem 0;
-}
-
+/* Hero Section - Keep original styling */
 .hero-image {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.hero-image:hover {
-    transform: scale(1.02);
 }
 
 /* Project Card Hover Effects */
@@ -343,7 +331,7 @@ section:first-of-type {
 }
 
 .aboutme-card {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
